@@ -12,16 +12,28 @@ nav {
 
 @media screen and (min-width: 600px) {
     body {
-        background-color: lightgreen;
+        background-color: papayawhip;
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 10px;
+        /* display: flex; */
+        grid-template-columns: 10% 1fr;
+        column-gap: 15px;
     }
 
     nav {
-        display: flex;
-        flex-grow: column;
+        flex-direction: column;
+        
+        /* align-items: center; */
+        /* padding-left: 10%; */
     }
+
+
+    nav a {
+        text-align: left;
+    }
+    /* nav a {
+        padding-left: 5px;
+        padding-right: 5px;
+    } */
 }
 
 @media screen and (min-width: 900px) {
