@@ -1,10 +1,26 @@
 body {
-    background-color: blue;
+    background-color: pink;
+    display: grid;
+
+}
+
+nav {
+    display: flex;
+    border:solid darkgoldenrod;
+    justify-content: space-around;
 }
 
 @media screen and (min-width: 600px) {
     body {
-        background-color: green;
+        background-color: lightgreen;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-grow: column;
     }
 }
 
